@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/static/js/main.5f1b9917.js",
+    "static/js/453.074f229b.chunk.js": "/static/js/453.074f229b.chunk.js",
+    "static/media/img10.jpg": "/static/media/img10.236836d53c23cfa5a6d7.jpg",
+    "static/media/img04.jpg": "/static/media/img04.4f89d361a86a19ca58fc.jpg",
+    "static/media/img05.jpg": "/static/media/img05.3d83cdd474a1d3dbb8a9.jpg",
+    "static/media/hero.jpg": "/static/media/hero.06e5fc9e50fcd10f5e8f.jpg",
+    "static/media/img03.jpg": "/static/media/img03.05ac446439df17cca160.jpg",
+    "static/media/about.jpg": "/static/media/about.b3a8863456fd0a1b31f5.jpg",
+    "static/media/img06.jpg": "/static/media/img06.265bc09b65d6f59d1521.jpg",
+    "static/media/img02.jpg": "/static/media/img02.56ca705697de8256a53f.jpg",
+    "static/media/img07.jpg": "/static/media/img07.8a975bf499c66da4674a.jpg",
+    "static/media/img08.jpg": "/static/media/img08.473b27f7f6222cedfc45.jpg",
+    "static/media/img11.jpg": "/static/media/img11.659656ff65d06daf093b.jpg",
+    "static/media/img031.jpg": "/static/media/img031.43bedae671a255502eb1.jpg",
+    "static/media/img01.jpg": "/static/media/img01.0ad030c73eef6e3c6d29.jpg",
+    "static/media/img09.jpg": "/static/media/img09.d99ae358822a4665736a.jpg",
+    "static/media/logo.png": "/static/media/logo.b8fd7377dd8631f4c21f.png",
+    "static/media/currency_exchange.png": "/static/media/currency_exchange.542d1fd36da2874eb6f0.png",
+    "static/media/search_icon.png": "/static/media/search_icon.c6544d3156a8bde3d076.png",
+    "static/media/dropdown_menu.png": "/static/media/dropdown_menu.e401dcaffa94e2703623.png",
+    "static/media/user.png": "/static/media/user.557587208eb9e232f2ca.png",
+    "static/media/shopping_cart.png": "/static/media/shopping_cart.78215909b21f0b186a7f.png",
+    "static/media/menu_button.png": "/static/media/menu_button.32ce22beb5e19223ae8c.png",
+    "static/media/x_mark.png": "/static/media/x_mark.1a35d5d77b541850f499.png",
+    "index.html": "/index.html",
+    "main.5f1b9917.js.map": "/static/js/main.5f1b9917.js.map",
+    "453.074f229b.chunk.js.map": "/static/js/453.074f229b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5f1b9917.js"
+  ]
+}
