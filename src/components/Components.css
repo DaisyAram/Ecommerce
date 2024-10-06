@@ -151,7 +151,7 @@ margin-top: 0px;
     flex-direction: row;
     border: 1px solid grey;
     /*margin: 30px;*/
-    background-color: #d4af37;
+    background-color: grey;
     font-family: 'Times New Roman';
     @media (max-width: 768px) {
         display: flex;
@@ -253,11 +253,12 @@ margin-top: 0px;
 }
 
 .text1 {
-  color: goldenrod;
+  color: red;
+  font-weight: bold;
  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .text2 {
-  color: black;
+  color: rgb(90, 89, 89);
   font-weight: bold
 }
 .line {
