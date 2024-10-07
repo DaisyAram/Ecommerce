@@ -71,7 +71,8 @@ return (
         alignItems: 'center',
         gap: '0.25rem',
         color: '#1a202c',
-        textDecoration: 'none'
+        textDecoration: 'none',
+         
       }}>
         <p>ABOUT</p>
         

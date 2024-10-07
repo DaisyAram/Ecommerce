@@ -53,7 +53,7 @@ export const products = [
         sizes: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         date: 1716634,
         price:  10,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: 2,
