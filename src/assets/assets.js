@@ -28,8 +28,20 @@ import contact_icon from './contact_icon.jpg'
 import exchange from './exchange.png'
 import customer_icon from './customer_icon.png'
 import return_policy from './return_policy.png'
+import facebook from './facebook.png'
+import twitter from './twitter.png'
+import social from './social.png'
+import whatsapp from './whatsapp.png'
+import tiktok from './tik-tok.png'
+import instagram from './instagram.png'
 
 export const assets = {
+    facebook,
+    instagram,
+    twitter,
+    social,
+    tiktok,
+    whatsapp,
     return_policy,
     dropdown_menu,
     exchange,

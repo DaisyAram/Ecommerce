@@ -11,6 +11,7 @@ import PlaceOrder from './pages/PlaceOrder'
 import Product from './pages/Product'
 import Navbar from './components/Navbar'
 import './App.css'
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -27,10 +28,9 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path="/place-order" element={<PlaceOrder />} />   
         <Route path="/orders" element={<Orders />} />
-              
-       
       </Routes>
     </Router>
+    <Footer/>
     </div>
   );
 }
