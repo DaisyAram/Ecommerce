@@ -25,9 +25,14 @@ import search_icon from './search_icon.png'
 import user from './user.png'
 import shopping_cart from './shopping_cart.png'
 import contact_icon from './contact_icon.jpg'
+import exchange from './exchange.png'
+import customer_icon from './customer_icon.png'
+import return_policy from './return_policy.png'
 
 export const assets = {
+    return_policy,
     dropdown_menu,
+    exchange,
     about,
     logo,
     menu_button,
@@ -39,6 +44,7 @@ export const assets = {
     user,
     shopping_cart,
     contact_icon,
+    customer_icon,
 }
 
 export const products = [

@@ -340,5 +340,27 @@ margin-top: 0px;
   color: red
 }
 
+/*policy container */
+.policy-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+ 
+}
+.icon{
+ 
+  display: block;
+  margin: 0 auto;
+}
+.icon-container {
+  padding: 20px;
+}
+
+
+
 
 
