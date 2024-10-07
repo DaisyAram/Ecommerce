@@ -23,7 +23,7 @@ const Newsletter = () => {
   return (
     <div className='newsletter-container'>
       <p style={{ fontWeight: 'bold', textAlign: 'center' }}>Weekly kicks magazine</p>
-      <p style={{ textAlign: 'center' }}>Access your weekly magazine and get offers</p>
+      <p style={{ textAlign: 'center' }}>Subscribe to our emails</p>
 
       <form className='newsletter-form' onSubmit={onSubmitHandler}>
         <input

@@ -367,11 +367,27 @@ margin-top: 0px;
 }
 
 /*footer */
+.footer {
+  margin: 30px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-content: first baseline;
+  
+  
+}
+.footer-left-side {}
+footer-right-side {}
 .socials {
   width: 5%;
   padding: 10px;
-
 }
 
+.footer-copyright {
+  font-weight: bold;
+  font-size: larger;
+}
 
 
