@@ -156,6 +156,7 @@ margin-top: 0px;
     @media (max-width: 768px) {
         display: flex;
         flex-direction: row;
+    
     }
   }
   
@@ -378,8 +379,7 @@ margin-top: 0px;
   
   
 }
-.footer-left-side {}
-footer-right-side {}
+
 .socials {
   width: 5%;
   padding: 10px;

@@ -1,5 +1,5 @@
 .gradient-background {
     height: full;
-    background-image: linear-gradient(to bottom, hwb(170 71% 0%), #ffffff);
+   /* background-image: linear-gradient(to bottom, grey, #ffffff);*/
     background-size: 100% 100%;
   }
