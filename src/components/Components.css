@@ -151,7 +151,7 @@ margin-top: 0px;
     flex-direction: row;
     border: 1px solid grey;
     /*margin: 30px;*/
-    background-color: grey;
+    background-color: rgb(173, 31, 31);
     font-family: 'Times New Roman';
     @media (max-width: 768px) {
         display: flex;
