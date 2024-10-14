@@ -49,11 +49,13 @@
     @media screen and (max-width: 768px) {
         width: 10%;
         display: block;
+        transition: transform 0.1s;
       }
 }
-.hidden {
-    display: none;
-  }
+.collection-dropdown:active {
+    transform: rotate(-90deg);
+}
+
 
 .checkbox-filter {
     display: flex;

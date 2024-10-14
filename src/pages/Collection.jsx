@@ -6,7 +6,6 @@ import { assets } from '../assets/assets'
 const Collection = () => {
   const { products } = useContext(ShopContext);  //getting data of all products
   const [showDropdown, setShowDropdown] = useState(false);
-  
 
   return (
     <div className='collection-container'>
@@ -20,7 +19,7 @@ const Collection = () => {
           />
 
         </p>
-        <div className={`category-filter${showDropdown ? '' : 'hidden'}`}>
+          <div style={{ display: showDropdown ? 'block' : '' }} className='category-filter'>
             <p>CATEGORY</p>
             <div className='checkbox-filter'>
             <p className='filters'>
@@ -34,8 +33,7 @@ const Collection = () => {
                 </p>
               </div>
             </div>
-            <div className={`category-filter${showDropdown ? '' : 'hidden'}`}>
-          
+            <div style={{ display: showDropdown ? 'block' : '' }} className='category-filter'>
               <p>TYPE</p>
               <div className='checkbox-filter'>
                 <p className='filters'>
@@ -55,7 +53,5 @@ const Collection = () => {
     
   );
 };
-
-
 
 export default Collection;
