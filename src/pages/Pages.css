@@ -26,9 +26,10 @@
     min-width: 60px;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
-       
+    cursor: pointer;    
 }
+
+
 .category-filter {
     font-family: new Times Roman;
     border: 1px solid grey;
@@ -42,6 +43,17 @@
         display: none;
     }
 }
+
+.collection-dropdown {
+    display: none;
+    @media screen and (max-width: 768px) {
+        width: 10%;
+        display: block;
+      }
+}
+.collection-dropdown.hidden {
+    display: none;
+  }
 
 .checkbox-filter {
     display: flex;

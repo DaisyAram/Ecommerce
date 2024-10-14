@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ShopContext } from '../context/Shop'
 import './Pages.css'
+import { assets } from '../assets/assets'
 
 const Collection = () => {
   const { products } = useContext(ShopContext);  //getting data of all products
@@ -9,10 +10,17 @@ const Collection = () => {
   return (
     <div className='collection-container'>
       <div className='filters-container'>
-      <p>FILTERS</p>
-      <div className='category-filter'>
-        <p>CATEGORY</p>
-        <div className='checkbox-filter'>
+        <p>FILTERS
+        <img
+            className='collection-dropdown'
+            src={assets.dropdown_menu}
+            alt=""
+          />
+
+        </p>
+          <div className='category-filter'>
+            <p>CATEGORY</p>
+            <div className='checkbox-filter'>
           <p className='filters'>
             <input  type='checkbox' value={'Unisex'}/>Unisex
           </p>
