@@ -12,6 +12,7 @@ const Collection = () => {
   
   const [category, setCategory] = useState([])
   const [subCategory, setSubCategory] = useState([])
+  const [sortType, setSortType] = useState('relevent')
 
   const toggleCategory = (e) => {
     if (category.includes(e.target.value)) {
@@ -39,18 +40,20 @@ const Collection = () => {
         SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
         break;
         
-        case 'relevant':
-          SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
+      case 'high-low':
+          SetFilterProducts(fpCopy.sort((a,b)=>(b.price - a.price)));
           break;
 
-          case 'high-low':
-            SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
-            break;
+      default:
+        applyFilters();
+        break;
           
       }
     }
   
-
+    useEffect(()=>{
+    sortProduct()
+    }, [sortType])
 
 
 
@@ -121,10 +124,10 @@ const Collection = () => {
             <div>
             <Title text1={'IN '} text2={'STORE'} />
 
-            <select className='select-items'>
-              <option value="low-high">Sort by:low-high</option>
+            <select onChange={(e)=>setSortType(e.target.value)} className='select-items'>
+              <option value="low-high">Sort by: Price(lowest first)</option>
               <option value="relevant">Sort by: Relevant</option>
-              <option value="high-low">Sort by:high-low</option>
+              <option value="high-low">Sort by: Price(highest first)</option>
             </select>
           </div>
           

@@ -11,6 +11,10 @@ import img08 from './img08.jpg'
 import img09 from './img09.jpg'
 import img10 from './img10.jpg'
 import img11 from './img11.jpg'
+import img12 from './img12.jpg'
+import img13 from './img13.jpg'
+import img14 from './img14.jpg'
+import img15 from './img15.jpg'
 
 
 import dropdown_menu from './dropdown_menu.png'
@@ -182,5 +186,57 @@ export const products = [
         price: 40,
         bestseller: true
     },
+    {
+        _id: 11,
+        name: "Sporty sneakers",
+        description: "Premium athletic sneakers",
+        category: "Ladies",
+        subCategory: "Athletic",
+        image: [img12],
+        sizes: [5, 6, 7, 8],
+        date: 9302033,
+        price: 45,
+        bestseller: true
+    },
+    
+    {
+        _id: 12,
+        name: "Sporty airmax",
+        description: "Premium airmax sneakers",
+        category: "Unisrx",
+        subCategory: "Athletic",
+        image: [img13],
+        sizes: [7, 8, 9, 10, 11],
+        date: 9302033,
+        price: 52,
+        bestseller: true
+    },
+    
+    {
+        _id: 13,
+        name: "SPLY",
+        description: "Premium snow white sporty sneakers",
+        category: "Men",
+        subCategory: "Athletic",
+        image: [img14],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 43,
+        bestseller: true
+    },
+    
+    {
+        _id: 14,
+        name: "Grey airmax",
+        description: "Premium sporty grey sneakers",
+        category: "Men",
+        subCategory: "Athletic",
+        image: [img15],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 49,
+        bestseller: true
+    },
+    
     
 ]
