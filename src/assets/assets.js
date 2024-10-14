@@ -15,6 +15,14 @@ import img12 from './img12.jpg'
 import img13 from './img13.jpg'
 import img14 from './img14.jpg'
 import img15 from './img15.jpg'
+import img16 from './img16.jpg'
+import img17 from './img17.jpg'
+import img18 from './img18.jpg'
+import img19 from './img19.jpg'
+import img20 from './img20.jpg'
+import img21 from './img21.jpg'
+import img22 from './img22.jpg'
+
 
 
 import dropdown_menu from './dropdown_menu.png'
@@ -111,7 +119,7 @@ export const products = [
         sizes: [7, 8, 9, 10, 11],
         date: 9302027,
         price: 10,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: 5,
@@ -201,10 +209,10 @@ export const products = [
     
     {
         _id: 12,
-        name: "Sporty airmax",
-        description: "Premium airmax sneakers",
-        category: "Unisrx",
-        subCategory: "Athletic",
+        name: "Puma",
+        description: "red, blue, white puma",
+        category: "Unisex",
+        subCategory: "Casual",
         image: [img13],
         sizes: [7, 8, 9, 10, 11],
         date: 9302033,
@@ -237,6 +245,92 @@ export const products = [
         price: 49,
         bestseller: true
     },
+
+    {
+        _id: 15,
+        name: "Airforce",
+        description: "Snow white Airforce",
+        category: "unisex",
+        subCategory: "Casual",
+        image: [img16],
+        sizes: [4, 5, 5, 7, 8, 9, 10, 11],
+        date: 9302033,
+        price: 45,
+        bestseller: true
+    },
+    {
+        _id: 16,
+        name: "Nike",
+        description: "Brown, white & black nike boots",
+        category: "Men",
+        subCategory: "Fashion",
+        image: [img17],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 52,
+        bestseller: true
+    },
+    {
+        _id: 17,
+        name: "Air jordan",
+        description: "White & red jordan boots",
+        category: "Men",
+        subCategory: "Athletic",
+        image: [img18],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 38,
+        bestseller: false
+    },
+    {
+        _id: 18,
+        name: "Fashion Sport",
+        description: "Black sporty sneakers",
+        category: "Men",
+        subCategory: "Athletic",
+        image: [img19],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 52,
+        bestseller: true
+    },
+    {
+        _id: 19,
+        name: "Vans",
+        description: "Yellow vans",
+        category: "Men",
+        subCategory: "Casual",
+        image: [img20],
+        sizes: [8, 9, 10, 11],
+        date: 9302033,
+        price: 20,
+        bestseller: false
+    },
+    {
+        _id: 20,
+        name: "Sporty Adidas",
+        description: "White adidas",
+        category: "Ladies",
+        subCategory: "Athletic",
+        image: [img21],
+        sizes: [4, 5, 6, 7],
+        date: 9302033,
+        price: 35,
+        bestseller: false
+    },
+    {
+        _id: 21,
+        name: "Air Force 1",
+        description: "White, red nike",
+        category: "Unisex",
+        subCategory: "Casual",
+        image: [img22],
+        sizes: [5, 6, 7, 8, 9, 10, 11],
+        date: 9302033,
+        price: 45,
+        bestseller: true
+    },
+    
     
     
 ]
