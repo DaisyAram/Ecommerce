@@ -5,7 +5,8 @@ import { assets } from '../assets/assets'
 
 const Collection = () => {
   const { products } = useContext(ShopContext);  //getting data of all products
-  const [showFilter, setShowFilter] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  
 
   return (
     <div className='collection-container'>
@@ -15,41 +16,46 @@ const Collection = () => {
             className='collection-dropdown'
             src={assets.dropdown_menu}
             alt=""
+            onClick={() => setShowDropdown(!showDropdown)}
           />
 
         </p>
-          <div className='category-filter'>
+        <div className={`category-filter${showDropdown ? '' : 'hidden'}`}>
             <p>CATEGORY</p>
             <div className='checkbox-filter'>
-          <p className='filters'>
-            <input  type='checkbox' value={'Unisex'}/>Unisex
-          </p>
-          <p className='filters'>
-            <input type='checkbox' value={'Ladies'}/>Ladies
-          </p>
-          <p className='filters'>
-            <input type='checkbox' value={'Men'}/>Men
-          </p>
-        </div>
+            <p className='filters'>
+                  <input type='checkbox' value={'Unisex'} />Unisex
+                </p>
+                <p className='filters'>
+                  <input type='checkbox' value={'Ladies'} />Ladies
+                </p>
+                <p className='filters'>
+                  <input type='checkbox' value={'Men'} />Men
+                </p>
+              </div>
+            </div>
+            <div className={`category-filter${showDropdown ? '' : 'hidden'}`}>
+          
+              <p>TYPE</p>
+              <div className='checkbox-filter'>
+                <p className='filters'>
+                  <input type='checkbox' value={'Fashion'} />Fashion
+                </p>
+                <p className='filters'>
+                  <input type='checkbox' value={'Casual'} />Casual
+                </p>
+                <p className='filters'>
+                  <input type='checkbox' value={'Athletic'} />Athletic
+                </p>
+              </div>
+            </div>
+          </div>
+        
       </div>
-      <div className='category-filter'>
-        <p>TYPE</p>
-        <div className='checkbox-filter'>
-          <p className='filters'>
-            <input  type='checkbox' value={'Unisex'}/>Unisex
-          </p>
-          <p className='filters'>
-            <input type='checkbox' value={'Ladies'}/>Ladies
-          </p>
-          <p className='filters'>
-            <input type='checkbox' value={'Men'}/>Men
-          </p>
-        </div>
-      </div>
-      </div>
-      
-    </div>
+    
   );
-}
+};
+
+
 
 export default Collection;

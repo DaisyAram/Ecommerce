@@ -51,7 +51,7 @@
         display: block;
       }
 }
-.collection-dropdown.hidden {
+.hidden {
     display: none;
   }
 
