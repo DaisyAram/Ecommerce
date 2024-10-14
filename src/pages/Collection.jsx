@@ -32,6 +32,26 @@ const Collection = () => {
   }
 
   /*Sorting*/
+  const sortProduct = () => {
+    let fpCopy = filterProducts.slice();
+    switch (sortType) {
+      case 'low-high':
+        SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
+        break;
+        
+        case 'relevant':
+          SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
+          break;
+
+          case 'high-low':
+            SetFilterProducts(fpCopy.sort((a,b)=>(a.price - b.price)));
+            break;
+          
+      }
+    }
+  
+
+
 
 
   const applyFilters = () => {
@@ -102,8 +122,8 @@ const Collection = () => {
             <Title text1={'IN '} text2={'STORE'} />
 
             <select className='select-items'>
-              <option value="relevant">Sort by: Relevant</option>
               <option value="low-high">Sort by:low-high</option>
+              <option value="relevant">Sort by: Relevant</option>
               <option value="high-low">Sort by:high-low</option>
             </select>
           </div>
