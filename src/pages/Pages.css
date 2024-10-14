@@ -13,12 +13,13 @@
 .collection-container {
     font-family: Times Roman;
     display: flex; 
-    flex-direction: column;
-    gap: 10rem;
+    flex-direction: row;
+    gap: 1rem;
     margin: 30px;
     @media (max-width: 768px) {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        
     }
 }
 .filters-container {
@@ -68,8 +69,29 @@
     color: grey;
     margin-top: 2px;
     text-align: left;
+    
 }
 
+.right-side {
+    margin-left: 3rem; 
+}
+.select-items {
+    border: 0.2px solid grey;
+    width: fit-content;
+    min-width: 100px;
+    margin-bottom: 1rem;    
+
+}
+
+.display-collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    row-gap: 1rem;
+  @media (max-width: 768px) {  
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /*about us page */
 .about-us{
