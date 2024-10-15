@@ -6,15 +6,17 @@ import './Pages.css'
 const Product = () => {
   const {productId} = useParams();
   const {products} = useContext(ShopContext);
-  const [productData, setProductData] = useState(false);
+  const [productData, setProductData] = useState(true);
   const [image, setImage]= useState('')
   
   const fetProductData = async () => {
     products.map((item)=>{
       if (item._id === productId) {
         setProductData(item)
-        setImage(item.image[0])
         console.log(item);
+        
+        setImage(item.image[0])
+        
         
         return null;
       }
@@ -31,13 +33,13 @@ const Product = () => {
     <div className='product-container'>
       <div className='product-data'>
         <div className='product-images'>
-          <div>
+          <div className='product-images-1'>
             {
               productData.image.map((item, index)=> (
                 <img src={item}
                   alt=""
                   key={index}
-                  className='imag'
+                  className='product-imag'
                 />
               ))
             }

@@ -28,7 +28,7 @@ return (
   paddingLeft: '2rem',
   paddingRight: '5rem',
   fontFamily: 'newTimes Roman',
-  '@media (max-width: 768px)': {
+  '@media (maxWidth: 768px)': {
       flexDirection: 'row',
       alignItems: 'stretch',
       padding: '1.25rem',
@@ -46,7 +46,7 @@ return (
        margin: '0 auto',          
        justifyContent: 'center',
        flexDirection: 'row',
-       '@media (max-width: 768px)': {
+       '@media (maxWidth: 768px)': {
         flexDirection: 'row',
         alignItems: 'stretch',
         paddingLeft: '0.5rem',
@@ -139,7 +139,7 @@ return (
             borderRadius: '0.375rem',
             padding: '0.75rem',
             boxShadow: '0 2px 5px rgba(0, 0, 0, .1)',
-            '@media (max-width: 768px)': {
+            '@media (maxWidth: 768px)': {
               width: '100%',
               left: '0',
               right: 'auto',

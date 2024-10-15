@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 const Policy = () => {
   return (
     <div className='policy-container'>
-        <div classname='icon-container'>
+        <div className='icon-container'>
 
             <img className='icon' src={assets.exchange} alt =''/>
             <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Exchange policy</p>
