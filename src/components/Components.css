@@ -390,4 +390,42 @@ margin-top: 0px;
   font-size: larger;
 }
 
+/*search bar */
+.search-bar-container {
+  justify-content: center;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+}
 
+.search-bar {
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgb(86, 83, 83);
+  width: 25rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-image {
+  width: 3%;
+  height: auto;
+  margin-right: 10px;
+}
+.cross-icon {
+  width: 2%;
+  height: auto;
+}
+.input-container {
+  flex: 1;
+  outline: none;
+  border: none;
+  
+
+}

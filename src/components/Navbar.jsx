@@ -1,6 +1,21 @@
-import React, { useState } from 'react'; import { assets } from '../assets/assets'; import { Link, NavLink } from 'react-router-dom';
+import React, { useContext, useState } from 'react'; 
+import { assets } from '../assets/assets';
+import { Link, NavLink } from 'react-router-dom';
+import { ShopContext } from '../context/Shop';
 
-const Navbar = () => { const [isDropdownVisible, setIsDropdownVisible] = useState(false); const handleMouseEnter = () => setIsDropdownVisible(true); const handleMouseLeave = () => {}; const handleDropdownMouseLeave = () => { setIsDropdownVisible(false); }; const handleDropdownMouseEnter = () => { setIsDropdownVisible(true); }; const [visible, setVisible ] = useState(false);
+const Navbar = () => { 
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false); 
+  const handleMouseEnter = () => setIsDropdownVisible(true); 
+  const handleMouseLeave = () => {}; 
+  const handleDropdownMouseLeave = () => { 
+    setIsDropdownVisible(false);
+  }; 
+  const handleDropdownMouseEnter = () => { 
+    setIsDropdownVisible(true); 
+  }; 
+  const [visible, setVisible ] = useState(false);
+
+  const {setShowSearch} = useContext(ShopContext)
 
 
 return (
@@ -94,6 +109,7 @@ return (
     {/* Search icon and dropdown menu */}
     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
       <img
+        onClick={()=>setShowSearch(true)}
         src={assets.search_icon} 
         style={{ width: '1.25rem', cursor: 'pointer' }} 
         alt="" />

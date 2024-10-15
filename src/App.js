@@ -12,12 +12,14 @@ import Product from './pages/Product'
 import Navbar from './components/Navbar'
 import './App.css'
 import Footer from './components/Footer.jsx';
+import Search from './components/Search.jsx';
 
 function App() {
   return (
     <div className='gradient-background'>
     <Router>
       <Navbar />
+      <Search />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
