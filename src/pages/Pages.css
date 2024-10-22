@@ -114,12 +114,7 @@
 
 /*products*/
 .product-container{
-    
-    border-top-width: 2px;
-    transition: opacity;
-    transition-timing-function: ease-in;
-    transition-duration: 500ms;
-    opacity: 1;
+    margin: 30px;
 }
 
 .product-data {
