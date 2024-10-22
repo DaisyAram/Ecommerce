@@ -85,8 +85,8 @@
 
 .display-collection {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     row-gap: 1rem;
   @media (max-width: 768px) {  
     grid-template-columns: repeat(2, 1fr);
@@ -146,4 +146,35 @@
     border-radius: 15px;
     color: black;
     
+}
+
+/*Cart*/
+.empty-cart {
+    text-align: center;
+}
+.empty-cart h2 {
+    margin: 30px;
+}
+.empty-cart p {
+    margin: 30px;
+    color: red;
+}
+.cart-item-image {
+    width: 10%;
+    
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    
+}
+.cart-item-details {
+   
+}
+.remove-icon {
+    width: 20px;
 }

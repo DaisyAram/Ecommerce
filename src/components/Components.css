@@ -295,20 +295,16 @@ margin-top: 0px;
   overflow: hidden;
 }
 .product-image {
-  width: 100%;
-  height: auto;
-  object-fit:contain;
-  :hover {
-    transform: scale(1.1);
-  }
-  
-  transition: all 0.3s ease-in-out;
+  width: 40%
 }
+
+  
+
 .render-products {
   font-family: 'Times New Roman', Times, serif;
   margin: 30px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   row-gap: 1rem;
   @media (max-width: 768px) {  
