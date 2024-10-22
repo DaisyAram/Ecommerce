@@ -15,7 +15,7 @@ const Cart = () => {
     <div className='empty-cart'>
       <h2>Your Shopping Cart</h2>
       {cart.length === 0 ? (
-        <p><strong>No items added to your Cart!</strong>
+        <p style={{ color: 'red' }}><strong>No items added to your Cart!</strong>
            <p>
            <button onClick={() => window.location.href = "./collection"}>Add items</button>
            </p>

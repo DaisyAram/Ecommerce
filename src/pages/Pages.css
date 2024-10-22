@@ -157,10 +157,15 @@
 }
 .empty-cart p {
     margin: 30px;
-    color: red;
+    color: blue;
 }
 .cart-item-image {
-    width: 10%;
+    width: 15%;
+    height: auto;
+    @media (max-width: 768px) {
+        width: 30%;
+        height: auto;
+    }
     
 }
 
@@ -170,11 +175,19 @@
     margin-bottom: 20px; 
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    @media (max-width: 768px) {
+        flex-direction: row;
+    }
     
 }
-.cart-item-details {
-   
-}
+.cart-item-details {}
 .remove-icon {
     width: 20px;
+    height: auto;
+}
+.payment-button {
+    margin-right: 5px;
+    height: 2.5rem;
+    border-radius: 3rem;
+    background-color: rgb(172, 171, 171);
 }
