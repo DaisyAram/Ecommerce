@@ -143,6 +143,7 @@
 }
 .product-images-1 {
     display: flex;
+    flex-direction: column;
     overflow-x: auto;
     width: full;
     justify-content: space-between;
@@ -152,4 +153,7 @@
         justify-content: normal;
     }
 }
-.product-imag {}
+.product-imag {
+    width: 15%;
+    cursor:pointer;
+}

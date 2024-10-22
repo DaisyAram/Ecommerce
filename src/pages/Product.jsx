@@ -1,57 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/Shop';
-import './Pages.css'
+import './Pages.css';
 
 const Product = () => {
-  const {productId} = useParams();
-  const {products} = useContext(ShopContext);
-  const [productData, setProductData] = useState(true);
-  const [image, setImage]= useState('')
-  
-  const fetProductData = async () => {
-    products.map((item)=>{
-      if (item._id === productId) {
-        setProductData(item)
-        console.log(item);
-        
-        setImage(item.image[0])
-        
-        
-        return null;
-      }
-    })
-  }
-  
-  useEffect(()=> {
-    fetProductData();
-  }, [productId, products])
+    const { products, addToCart } = useContext(ShopContext); // Destructure addToCart from context
+    const { productId } = useParams(); // Get the product ID from the URL
+    const product = products.find(item => item._id === parseInt(productId)); // Find the product by ID
 
+    if (!product) {
+        return <div>Product not found</div>; // Handle case where product is not found
+    }
 
+    const handleAddToCart = () => {
+        addToCart(product); // Call the addToCart function in shop context with the current product
+        alert(`${product.name} has been added to your cart!`); // Optional: Alert user
+    };
 
-  return productData ? (
-    <div className='product-container'>
-      <div className='product-data'>
-        <div className='product-images'>
-          <div className='product-images-1'>
-            {
-              productData.image.map((item, index)=> (
-                <img src={item}
-                  alt=""
-                  key={index}
-                  className='product-imag'
-                />
-              ))
-            }
-          </div>
+    return (
+        <div className="product-detail">
+            <h2>{product.name}</h2>
+            <img src={product.image[0]} alt={product.name} className="product-imag" />
+            <p><strong>Description:</strong> {product.description}</p>
+            <p><strong>Price:</strong> ${product.price}</p>
+            <p><strong>Category:</strong> {product.category}</p>
+            <p><strong>Subcategory:</strong> {product.subCategory}</p>
+            <p><strong>Available Sizes:</strong> {product.sizes.join(', ')}</p>
+            <button onClick={handleAddToCart} className="add-to-cart-button">Add to Cart</button>
         </div>
-
-      </div>
-
-      
-    </div>
-  ) : <div style={{ opacity: '0'}}></div>
-}
+    );
+};
 
 export default Product;
-
