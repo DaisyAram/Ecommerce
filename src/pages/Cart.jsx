@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/Shop';
 import { assets } from '../assets/assets';
+/*import { useHistory } from 'react-router-dom'*/
+
 
 const Cart = () => {
   const { cart, removeFromCart, currency } = useContext(ShopContext);
@@ -15,9 +17,12 @@ const Cart = () => {
     return (cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2));
   };
 
-  const handleCheckout = (paymentMethod) => {
-    
-  }
+  const handleCheckout = () => {
+    window.history.pushState({}, '', '/place-order');
+    window.location.href = '/place-order';
+  };
+  
+
 
   return (
     <div className='empty-cart'>
@@ -78,7 +83,7 @@ const Cart = () => {
           </table>
 
           <div>
-            <button onClick={() => handleCheckout('Checkout')} className="checkout-button">PROCEED TO CHECKOUT</button>
+            <button onClick={handleCheckout} className="checkout-button">PROCEED TO CHECKOUT</button>
           </div>
         </div>
       )}
