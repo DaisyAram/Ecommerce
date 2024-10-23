@@ -229,8 +229,46 @@
  }
 
  /*orders*/
- .order-image {
-    width: 10%;
-    height: auto;
- }
 
+ .orders-container {
+    padding: 20px;
+  }
+  
+  .order-products {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px;
+  }
+  
+  .order-product-item {
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #ddd; 
+    
+  }
+  
+  .order-image {
+    width: 100px; 
+    height: auto;
+    margin-right: 15px; 
+  }
+  
+  .order-details {
+    display: flex; 
+    flex-direction: column;
+   
+
+  }
+
+  .order-details p {
+     align-items: left;
+  }
+  
+  .order-info {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .track-order {
+    margin-top: 10px;
+  }

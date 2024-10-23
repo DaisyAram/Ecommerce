@@ -5,12 +5,12 @@ import { assets } from '../assets/assets';
 
 
 const Cart = () => {
-  const { cart, removeFromCart, currency } = useContext(ShopContext);
-  const shippingFee = 8; 
+  const { cart, removeFromCart, currency, delivery_fee } = useContext(ShopContext);
+  
 
   const calculateTotal = () => {
     const total = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-    return (total + shippingFee).toFixed(2); 
+    return (total + delivery_fee).toFixed(2); 
   };
 
   const calculateSubtotal = () => {
@@ -73,7 +73,7 @@ const Cart = () => {
               </tr>
               <tr>
                 <td>Shipping Fee:</td>
-                <td>{currency}{shippingFee.toFixed(2)}</td>
+                <td>{currency}{delivery_fee.toFixed(2)}</td>
               </tr>
               <tr>
                 <td><strong>Total:</strong></td>
@@ -92,5 +92,4 @@ const Cart = () => {
 }
 
 export default Cart;
-
 
