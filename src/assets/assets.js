@@ -212,7 +212,7 @@ export const products = [
         name: "Puma",
         description: "red, blue, white puma",
         category: "Unisex",
-        subCategory: "Casual",
+        subCategory: "Athletic",
         image: [img13],
         sizes: [7, 8, 9, 10, 11],
         date: 9302033,
