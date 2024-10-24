@@ -8,7 +8,8 @@ const ShopContextProvider = (props) => {
     const delivery_fee = 15;
     const [search, setSearch] = useState('')   
     const [showSearch, setShowSearch] = useState(false)
-    const [cart, setCart] = useState([]); // State to hold cart items
+    const [cart, setCart] = useState([]); 
+    
 
     const addToCart = (product) => {
         setCart(prevCart => {
@@ -57,8 +58,7 @@ const ShopContextProvider = (props) => {
         setShowSearch,
         cart,
         addToCart,
-        removeFromCart
-
+        removeFromCart,
 
     }
     return (

@@ -119,12 +119,13 @@ return (
         position: 'relative',
         zIndex: 1,
       }}>
-        <img src={assets.user}
+        <Link to ='/login'><img src={assets.user} 
           alt=""
           style={{ width: '1.25rem', cursor: 'pointer' }}                      
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
+        </Link>
         
         {/* Conditionally render the dropdown content */}
         {isDropdownVisible && (
