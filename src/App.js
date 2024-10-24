@@ -14,9 +14,11 @@ import './App.css'
 import Footer from './components/Footer.jsx';
 import Search from './components/Search.jsx';
 
+
 function App() {
   return (
     <div className='gradient-background'>
+      
     <Router>
       <Navbar />
       <Search />
@@ -33,6 +35,7 @@ function App() {
       </Routes>
     </Router>
     <Footer/>
+ 
     </div>
   );
 }

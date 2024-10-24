@@ -3,9 +3,15 @@ import "./Pages.css";
 
 const PlaceOrder = () => {
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
-        // Redirect to the orders page
-        window.location.href = '/orders'; // Replace '/orders' with your actual orders page URL
+        e.preventDefault(); 
+        window.location.href = '/orders'; 
+    };
+
+    const handlePaymentChange = (e) => {
+        const selectedPayment = e.target.value;
+        if (selectedPayment === 'cash') {
+            alert('Please note: Payment will be collected upon delivery.');
+        }
     };
 
     return (
@@ -33,7 +39,7 @@ const PlaceOrder = () => {
                     <input type="text" id="street" name="street" required placeholder='Street' style={{ height: '2rem', width: '21rem', textAlign: 'center' }} />
                 </div>
                 <div className='form-payment-details'>
-                    <select id="payment" name="payment" required style={{ height: '3rem', width: '15rem', textAlign: 'center' }}>
+                    <select id="payment" name="payment" required onChange={handlePaymentChange} style={{ height: '3rem', width: '15rem', textAlign: 'center' }}>
                         <option value="" disabled selected>Select payment method</option>
                         <option value="cash">Cash on Delivery</option>
                         <option value="stripe">Stripe</option>
